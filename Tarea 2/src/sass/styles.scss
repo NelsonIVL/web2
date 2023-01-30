@@ -1,0 +1,213 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;;
+}
+
+body{
+    background-color: $primary-color;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background-color: $secondary-color;
+    display: flex;
+    min-height: 100px;
+    justify-content: flex-end;
+    padding: 10px;
+    align-items: center;
+}
+
+header{
+    .nav-links{
+        margin-right: 100px;
+    }
+}
+
+header{
+    .nav-links{
+        li{
+            display: inline-block;
+            padding: 20px;
+            a{
+                font-size: 25px;
+                text-decoration: none;
+                color: $link-color;
+            }
+            a:hover{
+                color: gray;
+            }
+        }
+    }
+}
+
+header{
+    .profile-pic{
+        margin-right: auto;
+        margin-left: 100px;
+        img{
+            cursor: pointer;
+            height: 85px;
+            width: auto;
+            margin-right: auto;
+            border-radius: 10px;
+        }
+    }
+}
+
+.information{
+    margin: 20px;
+    height: 500px;
+}
+
+.images, .hobbies{
+    @extend .information
+}
+
+.titles{
+    @include titles;
+    >p{
+        margin-left: 15px;
+        color: $titles-color;
+        font-size: 50px;
+        font-weight: 800;
+    }
+}
+
+.information{
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        width: 33%;
+        border: 5px white;
+        float: left;
+        p{
+            @include text-format
+        }
+    }
+}
+
+.images{
+    >div{
+        p{
+            @include text-format
+        }
+    }
+}
+
+.information{
+    >div{
+        >img{
+            max-height: 95%;
+            max-width: 95%;
+        }
+    }
+}
+
+.information::after{
+    content: "";
+    display: table;
+    clear: both; //Clear fix
+}
+
+.images{
+    >div{
+        @include image-container;
+    }
+}
+
+.hobbies{
+    >div{
+        @include image-container;
+    }
+}
+
+.hobbies::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.images > div > img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hobbies> div > img{
+    max-height: 95%;
+    max-width: 95%;
+}
+
+.footer{
+    background-color: $secondary-color;
+    display: flex;
+    min-height: 100px;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+    div{
+        a,p{
+            color: white;
+            font-size: 25px;
+        }
+        a::hover{
+            color: gray;
+        }
+    }
+}
+
+@include tablet{
+    .information > div,.images > div,.hobbies > div{
+        height: 400px;
+        width: 50%;
+        border: 1px white;
+        float: left;
+    }
+
+
+    header{
+        display: flex;
+        
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+@include mobile{
+    .information > div,.hobbies>div,.images>div{
+        height: 400px;
+        width: 100%;
+        border: 1px white;
+        float: left;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav{
+        padding: 15px 0px;
+    }
+}
+
