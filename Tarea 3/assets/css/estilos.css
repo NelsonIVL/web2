@@ -47,6 +47,25 @@ header .profile-pic img {
   border-radius: 10px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notFound {
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
+
+.notFound > a {
+  font-size: 25px;
+}
+
 .information, .images, .hobbies {
   margin: 20px;
   height: 500px;
@@ -104,7 +123,7 @@ header .profile-pic img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 350px;
   width: 25%;
   border: 1px white;
   float: left;
@@ -114,7 +133,7 @@ header .profile-pic img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 350px;
   width: 25%;
   border: 1px white;
   float: left;
@@ -136,10 +155,16 @@ header .profile-pic img {
   max-width: 95%;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 .footer {
   background-color: #388087;
   display: flex;
-  min-height: 100px;
+  min-height: 60px;
   justify-content: space-evenly;
   padding: 10px;
   align-items: center;

@@ -57,6 +57,26 @@ header{
     }
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: auto;
+  
+  }
+  
+  .notFound{
+    width: 600px;
+      height: 200px;
+      text-align: center;
+      padding: 20px;
+      font-size: 60px;
+  }
+  
+  .notFound > a{
+    font-size: 25px;
+  }
+
 .information{
     margin: 20px;
     height: 500px;
@@ -142,10 +162,16 @@ header{
     max-width: 95%;
 }
 
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .footer{
     background-color: $secondary-color;
     display: flex;
-    min-height: 100px;
+    min-height: 60px;
     justify-content: space-evenly;
     padding: 10px;
     align-items: center;
