@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #F6F6F2;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #388087;
+  display: flex;
+  min-height: 100px;
+  justify-content: flex-end;
+  padding: 10px;
+  align-items: center;
+}
+
+header .nav-links {
+  margin-right: 100px;
+}
+
+header .nav-links li {
+  display: inline-block;
+  padding: 20px;
+}
+header .nav-links li a {
+  font-size: 25px;
+  text-decoration: none;
+  color: aliceblue;
+}
+header .nav-links li a:hover {
+  color: gray;
+}
+
+header .profile-pic {
+  margin-right: auto;
+  margin-left: 100px;
+}
+header .profile-pic img {
+  cursor: pointer;
+  height: 85px;
+  width: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.notFound {
+  width: 600px;
+  height: 200px;
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+}
+
+.notFound > a {
+  font-size: 25px;
+}
+
+.information, .images, .hobbies {
+  margin: 20px;
+  height: 500px;
+}
+
+.titles {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.titles > p {
+  margin-left: 15px;
+  color: #6FB3BB;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.information > div, .images > div, .hobbies > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 33%;
+  border: 5px white;
+  float: left;
+}
+.information > div p, .images > div p, .hobbies > div p {
+  align-items: center;
+  color: black;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+.images > div p {
+  align-items: center;
+  color: black;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+.information > div > img, .images > div > img, .hobbies > div > img {
+  max-height: 95%;
+  max-width: 95%;
+}
+
+.information::after, .images::after, .hobbies::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.images > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 25%;
+  border: 1px white;
+  float: left;
+}
+
+.hobbies > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  width: 25%;
+  border: 1px white;
+  float: left;
+}
+
+.hobbies::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.images > div > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hobbies > div > img {
+  max-height: 95%;
+  max-width: 95%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  background-color: #388087;
+  display: flex;
+  min-height: 60px;
+  justify-content: space-evenly;
+  padding: 10px;
+  align-items: center;
+}
+.footer div a, .footer div p {
+  color: white;
+  font-size: 25px;
+}
+.footer div a::hover {
+  color: gray;
+}
+
+@media screen and (max-width: 1023px) {
+  .information > div, .images > div, .hobbies > div {
+    height: 400px;
+    width: 50%;
+    border: 1px white;
+    float: left;
+  }
+  header {
+    display: flex;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    padding: 10px 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .information > div, .hobbies > div, .images > div {
+    height: 400px;
+    width: 100%;
+    border: 1px white;
+    float: left;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    padding: 15px 0px;
+  }
+}
