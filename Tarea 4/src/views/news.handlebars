@@ -1,0 +1,14 @@
+<div class="listNews">
+   <h3>Lista de Noticias</h3> 
+</div>
+
+{{#each news}}
+<div id="newsContent">
+    <img src="{{{this.urlToImage}}}" alt="imagen">
+    <h3><a href= "{{{this.url}}}" target="_blank"> {{this.title}} </a></h3>
+    <h4> {{this.author}} </h4>
+    <p> {{this.description}} </p>
+</div>
+{{/each}}
+
+
