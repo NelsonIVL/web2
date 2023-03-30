@@ -1,0 +1,44 @@
+
+
+.row{
+    display: flex;
+    width: 1800px;
+    height: 75vh;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 10px gray;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid black;
+    border-radius: 20px;
+
+    img{
+        height: 70vh;
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+
+    .sideInfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        //background-color: white;
+        width: 50%;
+        margin-left: 50px;
+
+        h1{
+            font-size: 9rem;
+            color: rgb(22, 21, 21);
+        }
+
+        p{
+            margin-top: 10px;
+            font-size: 35px;
+        }
+    }
+
+    .myImage{
+        margin-right: 100px;
+        
+    }
+}

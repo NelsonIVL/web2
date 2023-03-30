@@ -1,0 +1,39 @@
+app-header{
+    background-color: #6483bc;
+    min-height: 8vh;
+    max-height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: 1px solid black;
+}
+
+.mainContent{
+    min-height: 84vh;
+    display: flex;
+    background-color: #e8f4f8;
+    align-items: center;
+    justify-content: center;
+}
+
+app-footer{
+    display: flex;
+    background: #6483bc;
+    justify-content: end;
+    align-items: center;
+    min-height: 8vh;
+    max-height: 8vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
