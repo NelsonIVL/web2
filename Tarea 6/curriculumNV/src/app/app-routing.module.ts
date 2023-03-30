@@ -5,7 +5,7 @@ import { EducationComponent } from './pages/education/education.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
-import { SkillsComponent } from './skills/skills.component';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},

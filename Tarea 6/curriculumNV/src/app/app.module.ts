@@ -10,7 +10,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { EducationComponent } from './pages/education/education.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { SkillsComponent } from './skills/skills.component';
+import { SkillsComponent } from './pages/skills/skills.component';
 
 @NgModule({
   declarations: [
